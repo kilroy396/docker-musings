@@ -1,0 +1,6 @@
+based on minimal CentOS build (or maybe fedora server?)
+ansible provisioned docker setup
+users - ssh keys / passwordles sudo
+automatic repository based updates
+built on two esxi virtual machines - dhost01 dhost02
+ip addressing in the 30's
