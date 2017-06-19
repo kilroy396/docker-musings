@@ -1,6 +1,15 @@
 based on minimal CentOS build (or maybe fedora server?)
-ansible provisioned docker setup
-users - ssh keys / passwordles sudo
+users - ssh keys
 automatic repository based updates
 built on two esxi virtual machines - dhost01 dhost02
 ip addressing in the 30's
+
+ansible provisioned docker setup
+changes to /etc/ssh/sshd_config
+- PermitRootLogin no
+- PubkeyAuthentication yes
+passwordless sudo
+- visudo
+- andrew  ALL=(ALL) NOPASSWD: ALL
+or https://stackoverflow.com/questions/37333305/ansible-create-a-user-with-sudo-privileges
+tmux, bind-utils, open-vm-tools
